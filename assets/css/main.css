@@ -347,7 +347,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: black;
 	}
 
 	blockquote {
@@ -2431,7 +2431,7 @@ input, select, textarea {
 		}
 
 		.icon.alt:before {
-			background: #000000;
+			background: linear-gradient(302deg, rgb(96, 150, 202) 14%, #b4b9bd 100%);;
 			border-radius: 50%;
 			color: #ffffff;
 			display: inline-block;
@@ -4723,3 +4723,4 @@ input, select, textarea {
 		max-width: 100%;
 		height: auto;
 	}
+
