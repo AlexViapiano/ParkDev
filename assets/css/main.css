@@ -2914,7 +2914,7 @@ input, select, textarea {
 		}
 
 	ul.contact-icons li .icon:before {
-		background: #000000;
+		background: linear-gradient(302deg, rgb(96, 150, 202) 14%, #b4b9bd 100%);
 		color: #ffffff;
 	}
 
@@ -3643,9 +3643,9 @@ input, select, textarea {
 		-webkit-transition-timing-function: ease-in-out;
 		-ms-transition-timing-function: ease-in-out;
 		transition-timing-function: ease-in-out;
-		background: #ffffff;
+		background: linear-gradient(90deg, rgba(85,120,157,1) 6%, rgba(103,149,191,1) 77%);
 		border: none;
-		color: #282828;
+		color: white;
 		height: 4rem;
 		left: 0;
 		line-height: 4rem;
@@ -3754,7 +3754,7 @@ input, select, textarea {
 				}
 
 					#header > a[href="#menu"]:hover:before, #header > a[href="#menu"]:focus:before {
-						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 6px%3B stroke: %23000000%3B %7D%3C/style%3E%3Cline x1='10' y1='30' x2='90' y2='30' /%3E%3Cline x1='10' y1='50' x2='90' y2='50' /%3E%3Cline x1='10' y1='70' x2='90' y2='70' /%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 6px%3B stroke: %23FFFFFF%3B %7D%3C/style%3E%3Cline x1='10' y1='30' x2='90' y2='30' /%3E%3Cline x1='10' y1='50' x2='90' y2='50' /%3E%3Cline x1='10' y1='70' x2='90' y2='70' /%3E%3C/svg%3E");
 					}
 
 				#header > a[href="#menu"]:before {
@@ -3762,7 +3762,7 @@ input, select, textarea {
 					-webkit-order: 2;
 					-ms-order: 2;
 					order: 2;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 6px%3B stroke: %23000000%3B %7D%3C/style%3E%3Cline x1='10' y1='30' x2='90' y2='30' /%3E%3Cline x1='10' y1='50' x2='90' y2='50' /%3E%3Cline x1='10' y1='70' x2='90' y2='70' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 6px%3B stroke: %23FFFFFF%3B %7D%3C/style%3E%3Cline x1='10' y1='30' x2='90' y2='30' /%3E%3Cline x1='10' y1='50' x2='90' y2='50' /%3E%3Cline x1='10' y1='70' x2='90' y2='70' /%3E%3C/svg%3E");
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 1.75rem;
@@ -3775,9 +3775,9 @@ input, select, textarea {
 				}
 
 		#header.alt {
-			background-color: #eaeaea;
+			background-color: #55789d;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-			color: #777777;
+			color: white;
 			position: absolute;
 		}
 
@@ -3930,7 +3930,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
 			transition: opacity 0.5s ease, transform 0.5s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #000000;
+			background: linear-gradient(90deg, rgba(85,120,157,1) 6%, rgba(103,149,191,1) 77%);
 			border-radius: 10px;
 			color: #ffffff;
 			display: block;
@@ -4662,4 +4662,64 @@ input, select, textarea {
 	.copyright {
 		color: rgba(40, 40, 40, 0.5);
 		text-align: center;
+	}
+
+	.delay-6s {
+		animation-delay: 6s;
+	}
+
+
+	.product-page h1 {
+		margin: 60px;
+	}
+
+	.products {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.product {
+		border: 0.5px solid #eee;
+		margin: 10px;
+		border-radius: 10px;
+		max-width: 325px;
+		min-height: 400px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		max-width: 250px;
+		width: 250px;	
+		box-shadow: 5px 10px #d4ce891f;
+		overflow: hidden;
+	}
+
+	.product:hover {
+		transform: scale(1.05);
+		border-radius: 15px;	
+	}
+
+	.productDescriptionContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;	
+		padding: 20px;
+		margin: 0;
+	}
+
+	.productDescriptionContainer h2 {
+		text-align: center;
+	}
+
+	.product .image {
+		margin: 0px;
+		top: 0px;
+		max-height: 200px;
+	}
+
+	.product .image img {
+		max-width: 100%;
+		height: auto;
 	}
