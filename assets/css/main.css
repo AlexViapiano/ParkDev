@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3821,6 +3825,12 @@ input, select, textarea {
 				padding-right: 0;
 			}
 
+		@media screen and (max-width: 550px) {
+			#header > .logo span {
+				display: none;
+			}
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -3837,10 +3847,6 @@ input, select, textarea {
 					font-size: 0.8rem;
 					padding-left: 1rem;
 				}
-
-					#header > .logo span {
-						display: none;
-					}
 
 				#header > a[href="#menu"] {
 					height: calc(3rem - 1px);
@@ -4728,4 +4734,20 @@ input, select, textarea {
 .button:hover {
 	transform: scale(1.05);
 	border-radius: 15px;	
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    background: linear-gradient(90deg, rgba(85,120,157,1) 6%, rgba(103,149,191,1) 77%);
+    color: #FFF;
+}
+
+.contact-button:hover {
+	transform: scale(1.05);
+	border-radius: 15px;	
+	filter: drop-shadow(3px 3px 3px #000);
 }
