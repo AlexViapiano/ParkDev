@@ -347,7 +347,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: black;
+		color: #565252bf;
 	}
 
 	blockquote {
@@ -2568,6 +2568,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		justify-content: center;
 		cursor: default;
 		list-style: none;
 		margin-left: -1rem;
@@ -3523,7 +3524,7 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 736px) {
 
 		.split {
 			-moz-flex-wrap: wrap;
@@ -4724,3 +4725,7 @@ input, select, textarea {
 		height: auto;
 	}
 
+.button:hover {
+	transform: scale(1.05);
+	border-radius: 15px;	
+}
