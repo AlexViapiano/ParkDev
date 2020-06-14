@@ -4743,7 +4743,8 @@ a {
     align-items: center;
     min-width: 200px;
     background: linear-gradient(90deg, rgba(85,120,157,1) 6%, rgba(103,149,191,1) 77%);
-    color: #FFF;
+	color: #FFF;
+	margin: 5px;
 }
 
 .contact-button:hover {
