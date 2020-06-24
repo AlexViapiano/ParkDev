@@ -66,7 +66,9 @@
 										</a>
 										<a href='#map_canvas' class="box contact-button">
 											<i class='fas fa-map-pin' style='font-size:60px; color: #FFF;'></i>
-											123 Fakestreet
+											9378 rue de Lille,
+											<br />
+											H1Z2P5
 										</a>
 									</div>
 							</header>
@@ -110,9 +112,10 @@
 								</form>
 							</div>
 							
-							<hr />
+							<br />
+							<br />
 
-							<div id="map_canvas" style="width:100%; height:300px; border-radius: 15px; border: 2px solid #000;"></div>								
+							<div id="map_canvas" style="width:100%; height:300px; border-radius: 15px; border: 2px solid rgb(216, 220, 224);"></div>								
 
 							<!-- <div>
 								<h3><center><u>LETS CHAT</u></center></h3>
@@ -165,13 +168,13 @@
 			<script>
 				var myOptions = {
 						zoom: 12,
-						center: new google.maps.LatLng(45.598210, -73.567650),
+						center: new google.maps.LatLng(45.569520, -73.637840),
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					}
 	
 				function myMap() {
 					var mapOptions = {
-						center: new google.maps.LatLng(45.598210, -73.567650),
+						center: new google.maps.LatLng(45.569520, -73.637840),
 						zoom: 11,
 						mapTypeId: google.maps.MapTypeId.ROADMAP,
 						styles: [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"labels.text","stylers":[{"visibility":"on"},{"saturation":"-3"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#f39247"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"poi.school","elementType":"geometry.fill","stylers":[{"color":"#f39247"},{"saturation":"0"},{"visibility":"on"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#ff6f00"},{"saturation":"100"},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#f39247"},{"saturation":"0"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#008eff"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#f3dbc8"},{"saturation":"0"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}]
@@ -181,7 +184,7 @@
 					var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 	
 					var marker = new google.maps.Marker({
-						position: {lat: 45.598210, lng: -73.567650},
+						position: {lat: 45.569520, lng: -73.637840},
 						map: map,
 						title: 'LUVI'
 					});
