@@ -2571,7 +2571,7 @@ input[type='radio']:focus + label:before {
 }
 
 .image.fit img {
-  width: 100%;
+  width: 75%;
 }
 
 .image.main {
@@ -4754,8 +4754,8 @@ body.is-preload #banner .inner {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
   margin: 0;
+  height: 250px;
 }
 
 .productDescriptionContainer h2 {
